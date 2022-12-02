@@ -72,3 +72,14 @@ class Stock(models.Model):
     item_count = models.CharField(max_length=6)
     in_stock = models.BooleanField(default=False)
 
+
+class Texts(models.Model):
+    text_id = models.CharField(max_length=20)
+    ru = models.CharField(max_length=1500)
+    en = models.CharField(max_length=1500)
+    he = models.CharField(max_length=1500)
+
+
+class langs(models.Model):
+    user_id = models.CharField(max_length=20)
+    lang = models.CharField(max_length=3)
