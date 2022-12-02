@@ -1,14 +1,6 @@
 from django.db import models
 
 
-class Lead(models.Model):
-    first_name = models.CharField(max_length=20)
-    last_name = models.CharField(max_length=20)
-    age = models.IntegerField(default=0)
-    # agent = models.ForeignKey("", on_delete=models.CASCADE)
-
-
-
 
 class Worker(models.Model):
     user_id = models.CharField(max_length=10)
@@ -47,7 +39,7 @@ class Agent(models.Model):
     reg_date = models.CharField(max_length=20)
 
 
-class Clients(models.Model):
+class Lead(models.Model):
     user_id = models.CharField(max_length=10)
     username = models.CharField(max_length=15)
     first_name = models.CharField(max_length=10)
@@ -57,10 +49,26 @@ class Clients(models.Model):
     vip = models.CharField(max_length=10)
     country = models.CharField(max_length=120)
     city = models.CharField(max_length=20)
-    address = models.CharField(max_length=50)
+    address = models.CharField(max_length=50, default="")
     phone1 = models.CharField(max_length=13)
     phone2 = models.CharField(max_length=13)
     email = models.CharField(max_length=30)
     birth_date = models.CharField(max_length=20)
     reg_date = models.CharField(max_length=20)
     family_ids = models.CharField(max_length=150)
+
+
+class Stock(models.Model):
+    row_id = models.CharField(max_length=10)
+    item_id = models.CharField(max_length=15)
+    name = models.CharField(max_length=30)
+    item_firm = models.CharField(max_length=20)
+    item_barcode = models.CharField(max_length=60)
+    input_cost = models.CharField(max_length=4)
+    output_cost = models.CharField(max_length=4)
+    creation_date = models.CharField(max_length=20)
+    exp_date = models.CharField(max_length=20)
+    package_num = models.CharField(max_length=20)
+    item_count = models.CharField(max_length=6)
+    in_stock = models.BooleanField(default=False)
+
