@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -127,15 +127,9 @@ STATIC_URL = 'static/'
 
 
 
-from django.utils.translation import gettext as _
 
-LANGUAGES = (
-    ("he", _("Hebrew")),
-    ("ru", _("Russian")),
-    ("en", _("English")),
-    ("ar", _("Arabic")),
 
-)
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
