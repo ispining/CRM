@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,23 +21,23 @@ msgstr ""
 
 #: leads/views.py:8
 msgid "Hebrew"
-msgstr ""
+msgstr "עברית"
 
 #: leads/views.py:9
 msgid "Russian"
-msgstr ""
+msgstr "רוסית"
 
 #: leads/views.py:10
 msgid "English"
-msgstr ""
+msgstr "אנגלית"
 
 #: leads/views.py:11
 msgid "Arabic"
-msgstr ""
+msgstr "ערבית"
 
 #: leads/views.py:17
 msgid "Hello"
-msgstr ""
+msgstr "שלום"
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:15
 msgid "Messages"
