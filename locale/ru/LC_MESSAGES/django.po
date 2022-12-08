@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 16:53+0000\n"
+"POT-Creation-Date: 2022-12-07 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,25 +20,25 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: leads/views.py:8
-msgid "Hebrew"
-msgstr ""
-
-#: leads/views.py:9
-msgid "Russian"
-msgstr ""
-
-#: leads/views.py:10
-msgid "English"
-msgstr ""
+#: leads/templates/home.html:7 leads/templates/home.html:10 leads/views.py:34
+msgid "Hello"
+msgstr "Привет"
 
 #: leads/views.py:11
-msgid "Arabic"
-msgstr ""
+msgid "Hebrew"
+msgstr "Иврит"
 
-#: leads/views.py:17
-msgid "Hello"
-msgstr ""
+#: leads/views.py:12
+msgid "Russian"
+msgstr "Русский"
+
+#: leads/views.py:13
+msgid "English"
+msgstr "Английский"
+
+#: leads/views.py:14
+msgid "Arabic"
+msgstr "Арабский"
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:15
 msgid "Messages"

@@ -1,24 +1,33 @@
+import os
+
 from django.shortcuts import render
-from django.utils.translation import get_language, activate, gettext
+from django.utils.translation import gettext as _
 
 
 
 
 LANGUAGES = (
-    ("he", gettext("Hebrew")),
-    ("ru", gettext("Russian")),
-    ("en", gettext("English")),
-    ("ar", gettext("Arabic")),
+    ("he", _("Hebrew")),
+    ("ru", _("Russian")),
+    ("en", _("English")),
+    ("ar", _("Arabic")),
 
 )
 
-# Create your views here.
+
+
+
+
 def home(request):
-    trans = transtate(language="he")
+    trans = translate(language="ru")
     return render(request, "home.html", {"trans": trans})
 
-def transtate(language):
+
+def translate(language):
+    from django.utils.translation import get_language, activate, gettext
+
     cur_language = get_language()
+    print(cur_language)
     try:
         activate(language)
         text = gettext("Hello")

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 16:53+0000\n"
+"POT-Creation-Date: 2022-12-07 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,25 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
 "1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
-#: leads/views.py:8
+#: leads/templates/home.html:7 leads/templates/home.html:10 leads/views.py:34
+msgid "Hello"
+msgstr "שלום"
+
+#: leads/views.py:11
 msgid "Hebrew"
 msgstr "עברית"
 
-#: leads/views.py:9
+#: leads/views.py:12
 msgid "Russian"
 msgstr "רוסית"
 
-#: leads/views.py:10
+#: leads/views.py:13
 msgid "English"
 msgstr "אנגלית"
 
-#: leads/views.py:11
+#: leads/views.py:14
 msgid "Arabic"
 msgstr "ערבית"
-
-#: leads/views.py:17
-msgid "Hello"
-msgstr "שלום"
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:15
 msgid "Messages"
